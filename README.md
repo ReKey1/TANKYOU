@@ -2,16 +2,36 @@
 
 A retro-style 2D tank shooter built with [Pyxel](https://github.com/kitao/pyxel). Battle through endless randomly-generated levels, destroy enemy tanks, and survive as long as you can.
 
+![Gameplay](screenshots/gameplay.png)
+
 ## Features
 
 - **Procedurally generated levels** — four map chunks are randomly assembled each round
 - **Three enemy types**, each with unique stats, AI behavior, and shooting patterns
-  - Red: Standard tank with basic projectiles
-  - Brown: Shotgun — fires a spread of 6 bullets
-  - Green: Sniper — slow but high-damage shots with a visible targeting line
 - **Destructible environment** — boxes take damage and break apart
 - **Scaling difficulty** — more (and tougher) enemies as levels increase
 - **Visual feedback** — screen rumble on hit, health bar animation, dither effects
+
+## Enemies
+
+| Type | Behavior |
+|------|----------|
+| Red | Moderate speed, basic shot with slight spread |
+| Brown | Fires a spread of 6 bullets at once, half damage each |
+| Green | Slow, high damage (2×), shows a targeting line when locking on |
+
+![Enemies](screenshots/enemies.png)
+
+## Levels
+
+Each level assembles four random map chunks into a 256×256 arena. Boxes are destructible — shoot through them to open new paths or cut off enemies.
+
+![Level](screenshots/level.png)
+
+## Start Screen & Death Screen
+
+![Start Screen](screenshots/start_screen.png)
+![Death Screen](screenshots/death_screen.png)
 
 ## Requirements
 
@@ -36,6 +56,10 @@ python main.py
 | Mouse | Aim |
 | Left click | Shoot |
 | R | Restart after death |
+
+## About the Code
+
+Written in 2024, almost entirely by hand. AI was only used for generating a few trivial utility functions (collision math helpers, etc.) — all game logic, AI behavior, level generation, and architecture is original.
 
 ## Project Structure
 
