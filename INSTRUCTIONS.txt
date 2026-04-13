@@ -1,0 +1,7 @@
+Please run the file named "main.py"
+turn player tank using left and right arrows keys, and move forward and backward using the up and down arrow keys. Aim with mouse and click to shoot enemies.
+
+The walls break, and getting hit by enemy bullets will cause you to die. Press "R" to restart.
+
+There are three enemy types with unique shooting types and movement speeds, health, and appearance.
+There are unlimited levels, all randomly generated.
